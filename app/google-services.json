@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "759793795368",
+    "project_id": "petstagramjava",
+    "storage_bucket": "petstagramjava.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:759793795368:android:291697e957fc864ffa501d",
+        "android_client_info": {
+          "package_name": "com.busrayalcin.petstagram"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "759793795368-4vebngg9bdl4popuj3clu24rd38crpk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCIhZNeJ8tL7OT49W9RNr5RpEcWyg9An4g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "759793795368-4vebngg9bdl4popuj3clu24rd38crpk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
