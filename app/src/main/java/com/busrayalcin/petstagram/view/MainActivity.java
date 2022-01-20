@@ -1,4 +1,4 @@
-package com.busrayalcin.petstagram;
+package com.busrayalcin.petstagram.view;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,7 +8,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.busrayalcin.petstagram.databinding.ActivityFeedBinding;
 import com.busrayalcin.petstagram.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
