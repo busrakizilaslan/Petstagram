@@ -25,7 +25,7 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder>{
     @Override
     public PostHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         RecyclerRowBinding recyclerRowBinding = RecyclerRowBinding.inflate(LayoutInflater.from(parent.getContext()),parent,false);
-        return  new PostHolder(recyclerRowBinding);
+        return new PostHolder(recyclerRowBinding);
     }
 
     @Override
@@ -33,7 +33,6 @@ public class PostAdapter extends RecyclerView.Adapter<PostAdapter.PostHolder>{
         holder.recyclerRowBinding.recyclerViewUserEmailText.setText(postArrayList.get(position).email);
         holder.recyclerRowBinding.recyclerViewCommentText.setText(postArrayList.get(position).comment);
         Picasso.get().load(postArrayList.get(position).downloadUrl).into(holder.recyclerRowBinding.recyclerViewImageView);
-
     }
 
     @Override

@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Petstagram</string>
+    <string name="permissionNeed">Permission needed for gallery</string>
+    <string name="enterEmailPw">Enter email and password</string>
+    <string name="givePermission">Give permission</string>
+    <string name="permissionNeeded">Permission needed</string>
 </resources>

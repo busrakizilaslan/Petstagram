@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Petstagram</string>
+    <string name="permissionNeed">Galeri için izin gereklidir</string>
+    <string name="enterEmailPw">Eposta ve şifre giriniz</string>
+    <string name="givePermission">İzin veriniz</string>
+    <string name="permissionNeeded">İzin gereklidir</string>
+</resources>

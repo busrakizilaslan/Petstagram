@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.busrayalcin.petstagram.R;
 import com.busrayalcin.petstagram.databinding.ActivityMainBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -40,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         String password = binding.passwordText.getText().toString();
 
         if (email.equals("") || password.equals("")){
-            Toast.makeText(this,"Enter email and password",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.enterEmailPw, Toast.LENGTH_LONG).show();
         }else {
             auth.signInWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override
@@ -62,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         String password = binding.passwordText.getText().toString();
 
         if (email.equals("") || password.equals("")){
-            Toast.makeText(this,"Enter email and password !",Toast.LENGTH_LONG).show();
+            Toast.makeText(this, R.string.enterEmailPw, Toast.LENGTH_LONG).show();
         }else {
             auth.createUserWithEmailAndPassword(email,password).addOnSuccessListener(new OnSuccessListener<AuthResult>() {
                 @Override

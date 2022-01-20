@@ -60,16 +60,13 @@ public class FeedActivity extends AppCompatActivity {
                     Toast.makeText(FeedActivity.this, error.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
                 }
                 if (value != null){
-                   for (DocumentSnapshot snapshot : value.getDocuments()){
-                     Map<String, Object> data = snapshot.getData();
-                     String comment = (String) data.get("comment");
-                     String userEmail = (String) data.get("useremail");
-                     String downloadUrl = (String) data.get("downloadurl");
-
+                    for (DocumentSnapshot snapshot : value.getDocuments()){
+                       Map<String, Object> data = snapshot.getData();
+                       String comment = (String) data.get("comment");
+                       String userEmail = (String) data.get("useremail");
+                       String downloadUrl = (String) data.get("downloadurl");
                        Post post = new Post(userEmail,downloadUrl,comment);
                        postArrayList.add(post);
-
-
                    }
                    postAdapter.notifyDataSetChanged();
                 }
@@ -89,8 +86,8 @@ public class FeedActivity extends AppCompatActivity {
         if (item.getItemId() == R.id.add_post){
             Intent intent = new Intent(FeedActivity.this,UploadActivity.class);
             startActivity(intent);
-
-        }else if (item.getItemId() == R.id.signout){
+        }
+        else if (item.getItemId() == R.id.signout){
             auth.signOut();
             Intent intent = new Intent(FeedActivity.this,MainActivity.class);
             startActivity(intent);

@@ -19,6 +19,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Toast;
 
+import com.busrayalcin.petstagram.R;
 import com.busrayalcin.petstagram.databinding.ActivityUploadBinding;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -114,7 +115,7 @@ public class UploadActivity extends AppCompatActivity {
     public void selectImage(View view){
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED){
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,Manifest.permission.READ_EXTERNAL_STORAGE)){
-                Snackbar.make(view,"Permission needed for gallery",Snackbar.LENGTH_INDEFINITE).setAction("Give permission", new View.OnClickListener() {
+                Snackbar.make(view, R.string.permissionNeed, Snackbar.LENGTH_INDEFINITE).setAction(R.string.givePermission, new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         //ask permission
@@ -170,7 +171,7 @@ public class UploadActivity extends AppCompatActivity {
                     activityResultLauncher.launch(intent);
 
                 }else {
-                    Toast.makeText(UploadActivity.this, "Permission needed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(UploadActivity.this, R.string.permissionNeeded, Toast.LENGTH_SHORT).show();
                 }
 
             }
